@@ -1,4 +1,4 @@
-//g++ -o lab1 assignment-1.cpp -lglut -lGL
+//g++ -o lab1 assignment-1.cpp -lglut -lGL -lGLU
 
 #include <GL/glut.h>
 

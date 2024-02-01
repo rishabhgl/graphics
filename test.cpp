@@ -1,4 +1,4 @@
-//g++ -o test test.cpp -lglut -lGL
+//g++ -o test test.cpp -lglut -lGL -lGLU
 
 #include <GL/glut.h>  // GLUT, include glu.h and gl.h
  
