@@ -31,8 +31,9 @@ void display(){
     float m = float(dy)/dx;
     float abs_m = float(abs_dy)/abs_dx;
 
+    glBegin(GL_POINTS);
+
     for (int i = 0; i <= steps; i++){
-        glBegin(GL_POINTS);
         std::cout << start[0] << " " << start[1] << std::endl;
         glVertex2f(start[0], start[1]);
         if (abs_m <= 1){
@@ -42,8 +43,9 @@ void display(){
             start[0] += 1/abs_m * (abs_dy/dy);
             start[1] += 1 * (abs_dy/dy);
         }
-        glEnd();
     }
+    
+    glEnd();
 
     glFlush();
 }
